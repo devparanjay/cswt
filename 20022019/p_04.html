@@ -3,19 +3,11 @@
         <title>
             Assignment 04
         </title>
-        <script>
-            function newWindow() {
-                win = window.open("", "new_01", "height=400, width=400, resizable=yes")
-            }
-            function closeWindow() {
-                win.close()
-            }
-        </script>  
     </head>
     <body>
-        <form>
+        <form method="POST">
         Name: <br>
-        <input type="text" value="Enter Your Name Here"> <br><br>
+        <input type="text" value="Enter Your Name Here" id="name"> <br><br>
         Toppings: <br>
         Capsicum <input type="checkbox" name="topp" value="Capsicum">
         Tomatoes <input type="checkbox" name="topp" value="Tomatoes">
@@ -39,14 +31,32 @@
         Contact No.:
         <input type="number">
         Sample 1:
-        <select name="fruits" value="SELECT">
+        <select name="fruits" value="SELECT" id="ssize">
             <option> Select an Option </option>
             <option> Apples </option>
             <option> Bananas </option>
             <option> Grapes </option>
             <option> Bluberries </option>
         </select>
-        <input type="submit">
+        <input type="reset">
+        <input type="button" value="Submit" onclick="upper()">
         </form>
+        <script lang="JavaScript">
+            function newWindow() {
+                win = window.open("", "new_01", "height=400, width=400, resizable=yes")
+            }
+            function closeWindow() {
+                win.close()
+            }
+            function upper() {
+                var nm = document.getElementById("ssize").value;
+                if (document.getElementById("ssize").value[0]) {
+                    alert("Please selcet a Fruit")
+                    }
+                else {
+                alert("Name: " + nm);
+                }
+            }
+        </script>  
     </body>
 </html>
