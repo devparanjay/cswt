@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>
+            Assignment 02
+        </title>
+    </head>
+    <body>
+        Select the Color to from the list:- <br> <br>
+        <select id="col">
+            <option value="red" id="i1"> Red </option> <br>
+            <option value="blue" id="i2"> Blue </option> <br>
+            <option value="green" id="i3"> Green </option> <br>
+            <option value="yellow" id="i4"> Yellow </option> <br>
+            <option value="black" id="i5"> Black </option>
+        </select>
+        <input type="button" value="Count" onclick="countcol()">
+        <script lang="JavaScript">
+            function countcol(){
+                var options = document.getElementById("col");
+                var oplength = document.getElementById("col").length;
+                var op = document.getElementsByTagName("option");
+                for (i=0; i<=oplength; i++){
+                    var list = op[i].innerHTML;
+                    alert("Options: " + list + "Count: " + olength)
+                }
+            }
+        </script>
+    </body>
+</html>

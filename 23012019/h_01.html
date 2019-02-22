@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>
+            Practice
+        </title>
+        <script language="JavaScript">
+            function changeText() {
+                var c = sform.tex.value;
+               // var x = document.c.innerHTML;
+                document.getElementById("initial").innerHTML=c;
+            }
+        </script>
+    </head>
+    <body>
+        <p id="initial">
+            Initial text
+        </p>
+        <form name="sform">
+            <input type="text" name="tex" value="">
+            <input type="button" value="Submit" onclick="changeText()">
+            <input type="reset" value="reset">
+        </form>
+    </body>
+</html>

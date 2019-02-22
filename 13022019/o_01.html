@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>
+            Assignment 1
+        </title>
+    </head>
+    <body>
+        <h3>
+            Press the key while the text box below is selected to display the key that is being pressed.
+        </h3>
+        <input type="text" onkeypress="char(this)" id="tbox">
+        <script lang="JavaScript">
+            function char(aracter){
+                var key = event.charCode;
+                var cstring = String.fromCharCode(key);
+                alert("The character pressed is: " + cstring + " and the code is: " + key + ".");
+            }
+        </script>
+    </body>
+</html>

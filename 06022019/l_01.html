@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title>
+            Assignment 01
+        </title>
+    </head>
+    <body>
+        <h2 align="center">
+            Quantum Quiz
+        </h2>
+        <form name="Quiz" method="GET">
+            1. Which of the following is the spelling of a Black Hole's doom? <br> <br>
+            <select id="q1">
+                <option value="a0" id="a0"> Select your Answer </option> <br>
+                <option value="a1" id="a1"> Schrodinger's Cat </option> <br>
+                <option value="a2" id="a2"> Hawking Radiation </option> <br>
+                <option value="a3" id="a3"> Plank's Length </option> <br>
+                <option value="a4" id="a4"> Graviton </option> <br>
+            </select> <br> <br> <br>
+            2. Which of the following is the home of Schrodinger's Cat? <br> <br>
+            <select id="q2">
+                <option value="a00" id="a00"> Select your Answer </option> <br>
+                <option value="a5" id="a5"> A Box </option> <br>
+                <option value="a6" id="a6"> A Box with Poison </option> <br>
+                <option value="a7" id="a7"> A Box in a Basket </option> <br>
+                <option value="a8" id="a8"> A Box with a Radiation Source </option> <br>
+            </select> <br> <br> <br>
+            3. Which of the following is the center of the Milky Way? <br> <br>
+            <select id="q3">
+                <option value="a000" id="a000"> Select your Answer </option> <br>
+                <option value="a9" id="a9"> Capricon A </option> <br>
+                <option value="a10" id="a10"> Sagitarius Beta </option> <br>
+                <option value="a11" id="a11"> Sagitarius A* </option> <br>
+                <option value="a12" id="a12"> Capricon Beta* </option> <br>
+            </select> <br> <br> <br>
+            Submit your Answers: <br>
+            <input type="submit" value="Submit" id="btn" onclick="subans()">
+        </form>
+        <script language="JavaScript">
+            var score = 0
+            function subans(){
+                if (q1.value == "a2"){
+                    score+=1;
+                }
+                if (q2.value == "a8"){
+                    score+=1;
+                }
+                if (q3.value == "a11"){
+                    score+=1;
+                }
+                alert("Congratulations! You have " + score + " correct answers, you puny human!");
+            };
+        </script>
+    </body>
+</html>

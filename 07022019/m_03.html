@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>
+            Assignment 03
+        </title>
+    </head>
+    <body>
+        <h2>
+            This is the excercise page for the document.images property in JavaScript.
+        </h2>
+        Image 01
+        <img src="../logo_01.jpg" id="logo_01"> <br>
+        Image 02
+        <img src="../logo_02.jpg" id="logo_02"> <br> <br>
+        Press this button to get the URLs of the images: <br>
+        <input type="button" value="URLs" onclick="imgsrc()">
+        <script lang="JavaScript">
+            function imgsrc(){
+                var isrc_01 = document.images[0].src
+                var isrc_02 = document.images[1].src
+                alert("The URL of the first image in this page is: " + isrc_01 + " and the URL of the second image in this page is " + isrc_02 + ".")
+            }
+        </script>
+    </body>
+</html>

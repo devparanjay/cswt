@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <script language="JavaScript">
+            function blue() {
+                document.getElementById("tbox").style.backgroundColor="blue";
+            }
+            function red() {
+                document.getElementById("tbox").style.backgroundColor="red";
+            }
+            function green() {
+                document.getElementById("tbox").style.backgroundColor="green";
+            }
+            function yellow() {
+                document.getElementById("tbox").style.backgroundColor="yellow";
+            }
+        </script>
+    </head>
+    <body>
+        <h3>
+            This is a sample Text Box with no particular use.
+        </h3>
+        <form>
+            <table>
+                <tr>
+                    <th colspan="2" align="left">Color</th>
+                    <th>Output</th>
+                </tr>
+                <tr>
+                    <td>
+                        Blue <br>
+                        Red <br>
+                        Green <br>
+                        Yellow
+                    </td>
+                    <td>
+                        <input type="radio" value="Blue" onclick="blue()" name="power"> <br>
+                        <input type="radio" value="Red" onclick="red()" name="power"> <br>
+                        <input type="radio" value="Green" onclick="green()" name="power"> <br>
+                        <input type="radio" value="Yellow" onclick="yellow()" name="power">
+                    </td>
+                    <td>
+                    <input type="text" id="tbox" value="" onblur="chkbx()">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>

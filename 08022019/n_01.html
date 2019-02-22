@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>
+            Assignment 01
+        </title>
+    </head>
+    <body>
+        Select the Color to remove from the list:- <br> <br>
+        <select id="col" onchange="remcol()">
+            <option value="red"> Red </option> <br>
+            <option value="blue"> Blue </option> <br>
+            <option value="green"> Green </option> <br>
+            <option value="yellow"> Yellow </option> <br>
+        </select>
+        <script lang="JavaScript">
+            function remcol(){
+                var selcol = document.getElementById("col");
+                selcol.remove(selcol.selectedIndex);
+            }
+        </script>
+    </body>
+</html>

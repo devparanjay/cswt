@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>
+            Assignment 02
+        </title>
+    </head>
+    <body>
+        <h2>
+            This is the excercise page for the document.images property in JavaScript.
+        </h2>
+        Image 01
+        <img src="../logo_01.jpg" id="logo_01"> <br>
+        Image 02
+        <img src="../logo_02.jpg" id="logo_02"> <br> <br>
+        Press this button to count the images: <br>
+        <input type="button" value="URL" onclick="imgsrc()">
+        <script lang="JavaScript">
+            function imgsrc(){
+                var isrc = document.images[0].src
+                alert("The URL of the first image in this page is: " + isrc + ".")
+            }
+        </script>
+    </body>
+</html>

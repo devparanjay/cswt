@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <title>
+            Assignment 01
+        </title>
+        <script language="JavaScript">
+            // function quiz() {
+            //     var a1 = document.forms[0];
+            //     var ans = "";
+            //     for (let index = 0; index < a1.length; index++) {
+            //         const element = array[index];
+            //         ans = ans + a1.elements[index].value + "<br>";
+            //     }
+            //     if () {
+            //         alert("Question 1 has the right answer!")
+            //     }
+            // }
+            function checkedValue(element) {
+                for (var i = 0, length=element.length; i++){
+                    if (element[i].checked) {
+                        return element[i].value;
+                        break;
+                    }
+                }
+            }
+            function validation(Quiz) {
+                var checkedq1 = checkedValue(document.getElementsByName('q1'));
+                var checkedq2 = checkedValue(document.getElementsByName('q2'));
+                if (checkedq1 && checkedq2) {
+                    alert("Answers to the questions 1 and 2 are correct!; " + checkedq1 + " and " + checkedq2 + ".");
+                }
+                else {
+                    alert("No options selected.");
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h2>
+            Quiz
+        </h2>
+        <form name="Quiz">
+            1. Which of the following is the spelling of a Black Hole's doom? <br>
+            <input type="radio" name="q1" value="" id="a1"> Schrodinger's Cat <br>
+            <input type="radio" name="q1" value="a2" id="a2"> Hawking Radiation <br>
+            <input type="radio" name="q1" value="" id="a3"> Planck's Length <br>
+            <input type="radio" name="q1" value="" id="a4"> Graviton <br>
+            2. Which of the following is the home of Schrodinger's Cat?<br>
+            <input type="radio" name="q2" value=""> A Box <br>
+            <input type="radio" name="q2" value=""> A Box with Poison <br>
+            <input type="radio" name="q2" value=""> A Box with a Basket <br>
+            <input type="radio" name="q2" value=""> A Box with a Radiation Source <br>
+            3. Which of the following is the center of the Milky Way? <br>
+            <input type="radio" name="q3" value=""> Capricon A <br>
+            <input type="radio" name="q3" value=""> Sagitarius Alpha <br>
+            <input type="radio" name="q3" value=""> Sagitarius A* <br>
+            <input type="radio" name="q3" value=""> Capricon Beta* <br> <br>
+            Submit your Answers: <br>
+            <input type="submit" value="Submit" onclick="quiz()">
+        </form>
+    </body>
+</html>

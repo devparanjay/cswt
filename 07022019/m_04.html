@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>
+            Assignment 04
+        </title>
+    </head>
+    <body>
+        <h2>
+            This is the excercise page for the document.images property in JavaScript.
+        </h2>
+        Image 01
+        <img src="../logo_01.jpg" id="logo_01">
+        Image 02
+        <img src="../logo_02.jpg" id="logo_02"> <br> <br>
+        Press this button to change the first image: <br>
+        <input type="button" value="Change 01" onclick="img122()">
+        &nbsp; &nbsp; &nbsp; &nbsp;
+        <input type="button" value="Change 02" onclick="img221()">
+        <script lang="JavaScript">
+            function img122(){
+                document.images[0].srcset="../logo_02.jpg";
+            }
+            function img221(){
+                document.images[1].srcset="../logo_01.jpg";
+            }
+        </script>
+    </body>
+</html>

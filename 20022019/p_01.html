@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>
+            Assignment 01
+        </title>
+        <script>
+            function newWindow() {
+                win = window.open("", "new_01", "height=400, width=400, resizable=yes")
+                win.document.write("The name of this window is " + win.name + ".")
+            }
+        </script>  
+    </head>
+    <body>
+        <input type="button" onclick="newWindow()" value="Click to open a new Window">
+    </body>
+</html>

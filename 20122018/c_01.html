@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>
+            Assignment 1
+        </title>
+    </head>
+    <body>
+        <script language = "JavaScript">
+            var s = prompt ("Enter a String: ");
+            var s_length = s.length;
+            var s_4 = s.slice(4,4);
+            var s_bba = s.search("BBA");
+            var s_bca = s.replace("BBA", "BCA");
+            var s_last = s.lastIndexOf("BCA");
+            var s_bold = s.bold;
+            var s_bolit = s_bold.italics;
+            var s_color = s.fontcolor(color: "blue");
+            var s_colorsize = s_color.fontsize(size: "30");
+            document.write (
+                "Length: " + s_length;
+                "Index Position 4: " + s_4;
+                "Position of BBA: " + s_bba;
+                "Replacement of BBA with BCA: " + s_bca;
+                "The Index No. of the last occurence of BCA: " + s_last;
+                "The String in Bold and Italics: " + s_bolit;
+                "The String with 30 size and Blue color: " + s_colorsize;
+                )
+        </script>
+    </body>
+</html>

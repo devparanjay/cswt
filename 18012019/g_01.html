@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>
+            Assignment 1
+        </title>
+        <script language="JavaScript">
+            function chkVowel() {
+                var s = prompt("Enter the String")
+                var v1 = s.search("a");
+                var v2 = s.search("e");
+                var v3 = s.search("i");
+                var v4 = s.search("o");
+                var v5 = s.search("u");
+                a = s.slice(v1, v1+1);
+                e = s.slice(v2, v2+1);
+                i = s.slice(v3, v3+1);
+                o = s.slice(v4, v4+1);
+                u = s.slice(v5, v5+1);
+                document.write ("Vowels: " + a + e + i + o + u);
+            }
+         </script>
+    </head>
+    <body>
+        <form name="string" method="GET"></form>
+            Click here to Enter the String and see the Vowels in it: <br>
+            <input type="button" name="s" value="Click Here" onmouseout="chkVowel()">
+        </form>
+    </body>
+</html>

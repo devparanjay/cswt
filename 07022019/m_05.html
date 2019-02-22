@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <title>
+            Assignment 05
+        </title>
+        <!-- Code by Paranjay with help from Kushan -->
+    </head>
+    <body>
+        <h2>
+            This is the excercise page for the document.images property in JavaScript.
+        </h2>
+        Image 01
+        <img src="../logo_01.jpg" id="logo_01">
+        Image 02
+        <img src="../logo_02.jpg" id="logo_02">
+        Image 03
+        <img src="../logo_03.jpg" id="logo_03">
+        Image 04
+        <img src="../logo_04.jpg" id="logo_04"> <br> <br>
+        Press this button to change the first image: <br>
+        <input type="button" value="Change 01" onclick="img021()">
+        <br>
+        Press this button to change the second image: <br>
+        <input type="button" value="Change 02" onclick="img122()">
+        &nbsp; &nbsp; &nbsp; &nbsp;
+        <input type="button" value="Change 03" onclick="img223()">
+        &nbsp; &nbsp; &nbsp; &nbsp;
+        <input type="button" value="Change 04" onclick="img320()"> <br>
+        <input type="button" value="Reload Page" onclick="reload()">
+        <!-- <script lang="JavaScript">
+            function img021(){
+                // var img01 = document.images[1].src;
+                document.images[0].src=document.images[1].src;
+            }
+            function img122(){
+                // var img02 = document.images[2].src;
+                document.images[1].src=document.images[2].src;
+            }
+            function img223(){
+                // var img03 = document.images[3].src;
+                document.images[2].src=document.images[3].src;
+            }
+            function img320(){
+                // var img04 = document.images[0].src;
+                document.images[3].src=document.images[0].src;
+            }
+        </script> -->
+        <script lang="JavaScript">
+            var img00 = document.images[0].src;
+            var img01 = document.images[1].src;
+            var img02 = document.images[2].src;
+            var img03 = document.images[3].src;
+            function img021(){
+                document.images[0].src=img01;
+            }
+            function img122(){
+                document.images[1].src=img02;
+                img01 = document.images[1].src;
+            }
+            function img223(){
+                document.images[2].src=img03;
+                img02 = document.images[2].src
+            }
+            function img320(){
+                document.images[3].src=img00;
+                img03 = document.images[3].src;
+                img00 = document.images[0].src;
+            }
+        </script>
+    </body>
+</html>

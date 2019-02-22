@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <title>
+            Assignment 02
+        </title>
+    </head>
+    <body bgcolor="" id="bg">
+        <h2 align="center">
+            Change BG
+        </h2>
+        <form name="clr" method="POST">
+            Select the color from the below options to change the Background of this page into :- <br> <br>
+            <select id="color" onclick="subcol()">
+                <option value="a0" id="a0"> Select Color </option> <br>
+                <option value="r"> Red </option> <br>
+                <option value="b"> Blue </option> <br>
+                <option value="g"> Green </option> <br>
+                <option value="y"> Yellow </option> <br>
+                <option value="bl"> Black </option> <br>
+                <option value="p"> Pink </option> <br>
+                <option value="gr"> Grey </option> <br>
+                <option value="o"> Orange </option> <br>
+                <option value="lb"> Light Blue </option> <br>
+                <option value="lg"> Light Green </option> <br>
+                <option value="lgr"> Light Grey </option> <br>
+                <option value="reset"> Reset </option>
+            </select> <br> <br>
+            <br>
+            <!-- <input type="button" value="Submit" id="btn">  -->
+            <!-- If the submit button is to be used, then in the above input tag, "onclick="subcol()"" can be added while removing it from the "select" tag.. -->
+        </form>
+        <script language="JavaScript">
+            function subcol(){
+                if (color.value == "r"){
+                    document.bgColor="red";
+                }
+                if (color.value == "b"){
+                    document.bgColor="blue";
+                }
+                if (color.value == "g"){
+                    document.bgColor="green";
+                }
+                if (color.value == "y"){
+                    document.bgColor="yellow";
+                }
+                if (color.value == "bl"){
+                    document.bgColor="black";
+                }
+                if (color.value == "p"){
+                    document.bgColor="pink";
+                }
+                if (color.value == "gr"){
+                    document.bgColor="grey";
+                }
+                if (color.value == "o"){
+                    document.bgColor="orange";
+                }
+                if (color.value == "lb"){
+                    document.bgColor="lightblue";
+                }
+                if (color.value == "lg"){
+                    document.bgColor="lightgreen";
+                }
+                if (color.value == "lgr"){
+                    document.bgColor="lightgrey";
+                }
+                if (color.value == "reset"){
+                    document.bgColor="white";
+                }
+            };
+        </script>
+    </body>
+</html>

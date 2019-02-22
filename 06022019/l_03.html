@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>
+            Assignment 03
+        </title>
+    </head>
+    <body>
+        <h2 align="center">
+            Uppercase
+        </h2>
+        <form name="uppercase" method="POST">
+            Enter the text into the following box and it will automatically change to Uppercase :- <br> <br>
+            <input type="text" id="tbox" onchange="subtxt()" value="">
+            <br>
+            <!-- <input type="button" value="Submit" id="btn"> -->
+            <!-- If the submit button is to be used, then in the above input tag, "onclick="subcol()"" can be added while removing it from the "select" tag.. -->
+        </form>
+        <script language="JavaScript">
+            function subtxt(){
+                // var text = tbox.value;
+                tbox.value.style.textTransform = "toUpperCase";
+            };
+        </script>
+    </body>
+</html>
