@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>
+            Assignment 01
+        </title>
+    </head>
+    <body>
+        Clicking the button on this page will show the value of the user-agent header sent by the browser,
+        <br>
+        code name of the browser, and the version information of the browser in an Alert box.
+        <br> <br>
+        <input type="button" value="Click Here" onclick="info()">
+        <script lang="JavaScript">
+            function info() {
+                alert(
+                "User-Agent Header: " + navigator.userAgent + "\n" + "\n" +
+                "Browser's Code Name: " + navigator.appCodeName + "\n" + "\n" +
+                "Browser Version: " + navigator.appVersion
+                )
+            }
+        </script>
+    </body>
+</html>
