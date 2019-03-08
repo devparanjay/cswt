@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title> Assignment 01 </title>
+    </head>
+    <body>
+        <input type="button" value="Click here to open a new Window" onclick="openWin()">
+        The window will automatically close in 5 seconds.
+        <script lang="JavaScript">
+            var booo;
+            function openWin() {
+                var booo = window.open("","","width=500 height=500");
+                booo.document.write("This is a new Window, stored in a variable.");
+                // setTimeout(function(){booo.close()},5000);
+                setTimeout(closeWin,5000);
+            }
+            function closeWin(booo) {
+                booo.close();
+                // alert("ping")
+            }
+        </script>
+    </body>
+</html>

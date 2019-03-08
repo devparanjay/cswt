@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>
+            Class Practice 08
+        </title>
+    </head>
+    <body>
+        <h3>
+            Enter the "value" of browser history to change the location of the web-page to-
+            <input type="number" name="val" id="hist">
+            <br>
+            Click on the following button to show the protocol of this web page using the window.history.go method:-
+            <br>
+            <input type="button" value="Click Here" onclick="go()">
+        </h3>
+        <script lang="JavaScript">
+            function go() {
+                var x = document.getElementById("hist").value;
+                window.history.go(x);
+            }
+        </script>
+    </body>
+</html>

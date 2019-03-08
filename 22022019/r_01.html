@@ -17,8 +17,8 @@
         <input type="button" onclick="movWin()" value="Click Here">
         <br><br>
         3. Coordinates to move the new window to a new position relative to its current one: <br>
-        &nbsp &nbsp &nbsp x = <input type="number" name="xrcor" length="4" id="xrcor">
-        &nbsp &nbsp &nbsp y = <input type="number" name="yrcor" length="4" id="yrcor">
+        &nbsp &nbsp &nbsp x = <input type="number" name="xrcor" id="xrcor">
+        &nbsp &nbsp &nbsp y = <input type="number" name="yrcor" id="yrcor">
         <br>
         &nbsp &nbsp &nbsp Click this button to move the new window to the specified relative position:
         <input type="button" onclick="mrelWin()" value="Click Here">
@@ -28,15 +28,16 @@
             var a = document.getElementById("xrcor").value;
             var b = document.getElementById("yrcor").value;
             function newWin() {
-                win_01 = window.open("sample.html","win1", "width=500, height=300");
+                var win_01 = window.open("sample.html","win1", "width=500, height=300");
                 alert(win_01.parent.location);
             }
             function movWin() {
-                win_01.moveTo(x,y);
+                window.moveTo(x,y);
+                alert(x + ", " + y);
             }
             function mrelWin() {
-                win_01.moveBy(a,b);
-                alert (a + ", " + b)
+                window.moveBy(a,b);
+                alert(a + ", " + b);
             }
         </script>
     </body>

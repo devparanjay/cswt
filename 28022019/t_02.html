@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title> Assignment 01 </title>
+    </head>
+    <body>
+        <input type="button" value="Click here to open the Quiz" onclick="openWin()">
+        The test will end and the window will automatically close in 15 seconds.
+        <script lang="JavaScript">
+            var booo;
+            function openWin() {
+                var booo = window.open("./quiz.html","","width=1000 height=1000");
+                // booo.document.write("This is a new Window, stored in a variable.");
+                setTimeout(function(){booo.close()},15000);
+                // setTimeout(closeWin,5000);
+            }
+            function closeWin(booo) {
+                booo.close();
+                // alert("ping")
+            }
+        </script>
+    </body>
+</html>

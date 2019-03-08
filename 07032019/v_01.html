@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>
+            Client Access Info
+        </title>
+    </head>
+    <body>
+        <h2>
+            This web-page will show the basic info obained when the User is accesses this web-page.
+        </h2>
+        <br>
+        <input type="button" value="Show Info" onclick="info()">
+        <script lang="JavaScript">
+            function info() {
+                document.write(
+                "<h3>" + "User Info" + "</h3>" +
+                "<b>" + "Browser&nbspName: " + navigator.appName + "<br>" +
+                "Cookies Enabled: " + navigator.cookieEnabled + "<br>" +
+                "Browser Platform: " + navigator.platform + "<br>" +
+                "Supported Languages: " + navigator.languages + "<br>" +
+                "Java Enabled: " + navigator.javaEnabled() + "</b>"
+                )
+            }
+        </script>
+    </body>
+</html>
